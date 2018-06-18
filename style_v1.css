@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+#app {
+    margin: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: minmax(500px, 98vh);
+    /*grid-auto-columns: minmax(400px, auto);*/
+    grid-gap: 10px;
+}
+
+.game_field {
+    display: grid;
+    /*grid-template-rows: 30px minmax(30vh, 98vh) 30px;*/
+    /*grid-gap: 5px;*/
+    grid-auto-columns: minmax(300px, auto);
+
+}
+/*.game_field:before {*/
+
+    /*content: "";*/
+    /*padding-top: 100%;*/
+
+/*}*/
+
+canvas {
+    padding: 0;
+    border-radius: 5px;
+    /*background: rgba(0,151,167,.5);*/
+    background: #81C784;
+    height: 98vh;
+    margin-right: 10px;
+    /*width: 100vw;*/
+}
+
+.right-arrow {
+    position: fixed;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    background-color: #b5e251;
+    margin: 0;
+}
+
+.info_block {
+    /*display: grid;*/
+    border-radius: 5px;
+    /*grid-auto-rows: minmax(300px, auto);*/
+    /*grid-template-rows: 1fr 1fr;*/
+    /*grid-auto-columns: minmax(200px, auto);*/
+    /*background-color: rgba(0, 151, 167, .5);*/
+    background-color: #81C784;
+}
+
+.gamer_name {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 32px;
+}
+
+.gamer-info {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.text {
+    margin-right: 20px;
+}
+
+.carpets {
+    border: 1px solid #000;
+    width: 200px;
+    height: 110px;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#carpet_1 {
+    background-image: url("sprites/blue_g.jpg");
+    background-size: cover;
+
+}
+#carpet_2 {
+    background-image: url("sprites/yellow_g.jpg");
+    background-size: cover;
+
+}
+
+.money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+#money_1 {
+    background-image: url("sprites/coin.png");
+    background-size: cover;
+}
+#money_2 {
+    background-image: url("sprites/coin.png");
+    background-size: cover;
+}
+
+.fields {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/*кнопки поворота*/
+.right-arrow {
+    position: fixed;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    background-color: #b5e251;
+    margin: 0;
+}
+
+/*Игральный кубик*/
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools_dice {
+    display: flex;
+    align-items: center;
+}
+
+.dice {
+    width: 60px;
+    float: left;
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.dice-roll {
+    cursor: pointer;
+    text-transform: capitalize;
+}

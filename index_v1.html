@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Marrakech</title>
+    <link rel="stylesheet" href="style_v1.css">
+</head>
+<body>
+<div class="main" id="app">
+    <div class="info_block left">
+        <h3 id="gamer_name_1" class="gamer_name">Игрок 1</h3>
+        <div class="gamer-info">
+            <div class="info">
+                <h3 class="text">Ковры</h3>
+                <div class="carpets" id="carpet_1">24</div>
+            </div>
+            <div class="info">
+                <h3 class="text">Монеты</h3>
+                <div class="money" id="money_1">30</div>
+            </div>
+            <div class="info">
+                <h3 class="text">Закрытые клетки</h3>
+                <div class="fields" id="carpet_on_field_1">0</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="tools_dice">
+                <div id="dice-side-1" class="dice">0</div>
+            </div>
+            <div id="dice" class="tools_dice">
+                <button type="button" class="dice-roll" v-on:click="dice">roll dice</button>
+            </div>
+        </div>
+    </div>
+    <div class="game_field">
+        <canvas id="canvas"></canvas>
+        <div class="right-arrow"></div>
+        <div class="right-arrow" id="left-arrow"></div>
+        <div class="right-arrow" id="up-arrow"></div>
+        <div class="right-arrow" id="down-arrow"></div>
+    </div>
+    <div class="info_block right">
+        <h3 id="gamer_name_2" class="gamer_name">Игрок 2</h3>
+        <div class="gamer-info">
+            <div class="info">
+                <h3 class="text">Ковры</h3>
+                <div class="carpets" id="carpet_2">24</div>
+            </div>
+            <div class="info">
+                <h3 class="text">Монеты</h3>
+                <div class="money" id="money_2">30</div>
+            </div>
+            <div class="info">
+                <h3 class="text">Закрытые клетки</h3>
+                <div class="fields" id="carpet_on_field_2">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!--<script src="es5/map.js"></script>-->
+<script src="es6/map.js"></script>
+<script src="es6/control.js"></script>
+<!--<script src="es5/assan.js"></script>-->
+<script src="es6/assan.js"></script>
+<!--<script src="es5/carpet.js"></script>-->
+<script src="es6/carpet.js"></script>
+<script src="es6/gamer.js"></script>
+<script src="es6/computer.js"></script>
+<script src="es6/test.js"></script>
+</body>
+</html>
